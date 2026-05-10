@@ -1,23 +1,23 @@
 # vidya
 
-Agent skills and canonical CS texts.
+可复用的 Agent skills，以及各领域奠基性文章的中文版。
 
-## Structure
+## 结构
 
 ```text
 vidya/
-├── skills/          # reusable, portable agent skills
+├── skills/          # 可复用的 Agent skills
 │   └── <skill-name>/
 │       ├── SKILL.md
 │       ├── references/
 │       ├── scripts/
 │       └── assets/
-└── canon/           # foundational CS papers and talks, in Chinese
+└── canon/           # 各领域经典文章中文版（持续收录）
 ```
 
-## Rules
+## 规则
 
-- Keep each skill in its own directory
-- Use `SKILL.md` as the source of truth
-- Keep platform-specific metadata out of the core repo
+- 每个 skill 放在独立目录下
+- 以 `SKILL.md` 为单一事实来源
+- 不在核心仓库中存放平台相关的元数据
 
