@@ -1,19 +1,18 @@
 # vidya
 
-Reusable, portable agent skills.
+Agent skills and canonical CS texts.
 
 ## Structure
 
 ```text
 vidya/
-├── skills/
+├── skills/          # reusable, portable agent skills
 │   └── <skill-name>/
 │       ├── SKILL.md
 │       ├── references/
 │       ├── scripts/
 │       └── assets/
-└── templates/
-    └── skill/
+└── canon/           # foundational CS papers and talks, in Chinese
 ```
 
 ## Rules
