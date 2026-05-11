@@ -92,7 +92,7 @@ FORTRAN 的发明者反过来论证 FORTRAN 这类语言根本错了，把 von N
 
 物理符号系统假说。AI 作为 CS 的奠基哲学位置，这一篇在那里。
 
-### ✎ [ai/karpathy_software_2_0.md](ai/karpathy_software_2_0.md) — Software 2.0 (2017) · Andrej Karpathy
+### [ai/karpathy_software_2_0.md](ai/karpathy_software_2_0.md) — Software 2.0 (2017) · Andrej Karpathy
 
 "编程"这件事正在被重新定义，这是把那个重新定义说清楚的文章。
 
