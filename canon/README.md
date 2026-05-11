@@ -1,119 +1,124 @@
-# canon
+# canon / 索引
 
-各学科奠基性的论文、演讲、笔记——目前以计算机科学为主，但不止于此。每一篇背后，都沉淀着有人多年的经验、思考，以及他消化过的别人的工作。
+23 份入选，按"沉淀的厚度"和"对其他文章的解释力"组织成六类。
 
-每篇下面那段是我的判断，只回答三件事：它独到在哪、哪里说过头了、值不值得反复翻。不是摘要。标 ✎ 的还没翻译。
+每条按 vidyā 的入选标准看过：作者在这件事上花过至少几十年，付过代价，写的时候没有在表演。
 
-按"会被脑子调用的频率"排了一个分级——从"每天用的刀"到"读一次就够"——见 [PRIORITY.md](PRIORITY.md)。下面这份目录按主题分，不按优先级。
+每一类内部按推荐阅读顺序排列——越靠前的越是"读完之后看后面会变"。
 
-## 愿景
+---
 
-工具应该长什么样，人和工具应该是什么关系。
+## 推荐起点
 
-✎ [vision/engelbart_augmenting_human_intellect.md](vision/engelbart_augmenting_human_intellect.md) — Augmenting Human Intellect: A Conceptual Framework (1962) · Douglas Engelbart
+最先读这五篇。不是因为它们最重要，是因为读完之后你看 canon 其它东西的方式会变。
 
-Bush 那篇是诗，这篇是工程。Engelbart 把"用工具增强人"落成一个具体的框架——H-LAM/T——说人和工具本来就是一个系统，要一块儿进化。1968 年那场 Mother of All Demos 是它的现场版，鼠标、超文本、协同编辑都在里面。读它是为了看清，一个真正工程化的人机协作模型该长什么样。
+1. **[You and Your Research](career/hamming_you_and_your_research.md)** — Hamming
+2. **[Creative Thinking](career/shannon_creative_thinking.md)** — Shannon
+3. **[Augmenting Human Intellect](vision/engelbart_augmenting_human_intellect.md)** — Engelbart
+4. **[Simple Made Easy](languages/hickey_simple_made_easy.md)** — Hickey
+5. **[The Bitter Lesson](ai/sutton_bitter_lesson.md)** — Sutton
 
-[vision/licklider_symbiosis.md](vision/licklider_symbiosis.md) — Man-Computer Symbiosis (1960) · J.C.R. Licklider
+---
 
-把人擅长什么、机器擅长什么各自掰开说，然后主张一种特别的关系：不是机器替人，不是机器当工具，是共生。这篇放到 2026 年读还是格外贴当下——他对人机分工的判断大体还成立，只是 LLM 把那条边界往机器那边推了一截。今天讲"人 AI 协作"，最早一份认真讨论就在这里。
+## 一、计算的愿景
 
-[vision/victor_inventing_on_principle.md](vision/victor_inventing_on_principle.md) — Inventing on Principle (2012) · Bret Victor
+这一组的共同问题：计算机到底是用来做什么的？
 
-是演讲，不是论文。Victor 说，伟大的工作来自先找到一条原则，然后让它管住一切。演示部分是顶级修辞，但他真正在说的是一种关于创作的心理学主张——这套话可以争，很多伟大的工作并不是从原则出发，而是从一个具体问题、一种反复撞到的限制里长出来的。带着怀疑去看：他用极致的演示让一个未必普适的论点显得自明。它真正独特的，是把"原则驱动的创作"抬上桌面认真讨论。
+### [Augmenting Human Intellect: A Conceptual Framework](vision/engelbart_augmenting_human_intellect.md) — Douglas Engelbart, 1962
+Engelbart 是鼠标、超文本、协同编辑的发明者；1968 年他主持的演示后来被称为 "the Mother of All Demos"，一次性预演了之后五十年的个人计算图景。他一生在做同一件事：让人类的集体智识被工具放大。本文是他这件事的纲领——提出 H-LAM/T 框架：人与他的语言、人工物、方法论、训练共同构成一个增智系统。我们今天习以为常的工作方式，几乎都可以追溯到这份纲领。
 
-[vision/victor_learnable_programming.md](vision/victor_learnable_programming.md) — Learnable Programming (2012) · Bret Victor
+### [Man-Computer Symbiosis](vision/licklider_symbiosis.md) — J.C.R. Licklider, 1960
+Licklider 是 ARPA IPTO 的第一任主任。后来的互联网、个人计算的研究网络，是他用国防经费铺出来的。他自己是心理学出身——所以他从一开始就不把计算机看成"工具"，看成"伙伴"。本文比 Engelbart 早两年，提出"人机共生"：人定义问题、做判断，机器处理可形式化的部分。HCI 与交互式计算的源头。
 
-表面在批 Khan Academy，实际是一套编程的认知理论：大部分编程时间花在脑子里跑程序状态——环境只要把状态显出来，这部分工作就消失了。论证比《Inventing on Principle》扎实得多。这套话很难正面反驳，但十多年过去，现实里的工具进展依然很慢。读它会让你重新看那些"看着在写代码、其实在脑子里跑模拟"的时间。
+### [Inventing on Principle](vision/victor_inventing_on_principle.md) — Bret Victor, 2012
+Victor 早年在 Apple 做交互设计，离开后用十多年时间打磨少数几篇极有重量的文章和演示（*Magic Ink*、*Up and Down the Ladder of Abstraction*），现在做 Dynamicland。他的产出节奏本身就在说明什么叫"在一件事上待够久"。本文是一场演讲。表面上讲"创造者需要与所创之物即时连接"，底下问的是：你愿意为某一条原则，组织你的一生吗？
 
-## 系统设计
+### [Learnable Programming](vision/victor_learnable_programming.md) — Bret Victor, 2012
+同上作者。对 Khan Academy 编程课程的回应。论点是：程序员不该在脑子里执行代码——环境应当让抽象当下可见。深处问的是工具与思考之间的关系。
 
-怎么造大、能撑得久、不会自己塌的东西。
+---
 
-[systems/lamport_time_clocks.md](systems/lamport_time_clocks.md) — Time, Clocks, and the Ordering of Events (1978) · Leslie Lamport
+## 二、系统设计的工艺
 
-证明了一件事：分布式系统里没有全局的"现在"，只有事件之间的因果先后。今天每个分布式数据库、共识算法、跨区服务，血缘都追得回这里。它给了一个用一辈子的动作——什么时候能说 A 在 B 之前发生？只有 A 的信息可能到达 B 时才能说。这是论文，不是 essay，精确本身就是它的贡献。
+这一组是几位老工匠在自己的台子上做了几十年之后，留下的几页笔记。
 
-[systems/lampson_hints.md](systems/lampson_hints.md) — Hints for Computer System Design (1983) · Butler Lampson
+### [Hints for Computer System Design](systems/lampson_hints.md) — Butler Lampson, 1983
+Lampson 是 1992 年图灵奖得主、Xerox PARC 的核心成员之一。Alto——第一台带图形界面的个人计算机——是他参与设计的；激光打印机也是。他这一生都在做能跑起来的真东西，而且做得快。本文是他做了二十年系统之后写下的"提示"——不是定理，不是方法论，是一些他亲手验证过的判断。"Make it work, then make it work fast." "Plan to throw one away."
 
-做过 Alto、Bravo、第一台激光打印机的人。很多 hint 现在已经成了常识（"让常见情况快"、"扛不住就丢负载"），但常识把背后的"为什么"丢了——原文留着推理。每一条都有他自己造过的系统作背书。一个真正在造东西的人，把脑子里的规则原样讲出来，后来几乎没人再这么写。
+### [No Silver Bullet](career/brooks_no_silver_bullet.md) — Fred Brooks, 1986
+Brooks 1999 图灵奖。早年在 IBM 领导 System/360——1960 年代最大的工程项目之一。他从那段亲身经历里写出了 *The Mythical Man-Month*，之后写了这篇。本文区分"本质复杂性"与"偶然复杂性"，预言十年内不会有任何单一技术带来一个数量级的生产力提升。三十多年过去，他基本对。
 
-[systems/parnas_decomposing_modules.md](systems/parnas_decomposing_modules.md) — On the Criteria To Be Used in Decomposing Systems into Modules (1972) · David Parnas
+### [On the Criteria To Be Used in Decomposing Systems into Modules](systems/parnas_decomposing_modules.md) — David Parnas, 1972
+Parnas 是软件工程"信息隐藏"原则的奠基者。值得记住的一件事：八十年代美国搞星球大战导弹防御时，他是少数几个看清这件事在工程上不可能、辞职离开的科学家。他对责任的判断，写在他的工程判断里。本文用同一个系统（KWIC index）的两种分解方式，论证模块划分应依据"什么会变"，而非"系统按什么顺序运行"。是面向对象与现代软件架构的所有讨论的起点。
 
-信息隐藏的源头。用同一个问题（KWIC index）的两种切法做对照，把"按步骤切"和"按变化点切"之间的差别，从口味之争抬成了实证之争。这种论证方法本身比结论还值钱——它教你怎么不带情绪地争模块边界。
+### [End-to-End Arguments in System Design](systems/saltzer_reed_clark_end_to_end.md) — Saltzer, Reed, Clark, 1984
+三位都在 MIT。David Clark 在 1981–1989 担任互联网首席协议架构师——TCP/IP 真正成型的那几年，是他在主持。这三个人造的不是论文，是基础设施。本文论证：网络的智能应当放在端点，而非中间节点。这条原则解释了为什么 TCP/IP 赢了 X.25，也解释了今天关于网络中立性的所有争论。
 
-[systems/saltzer_reed_clark_end_to_end.md](systems/saltzer_reed_clark_end_to_end.md) — End-to-End Arguments in System Design (1984) · Saltzer, Reed, Clark
+### [A Plea for Lean Software](systems/wirth_lean_software.md) — Niklaus Wirth, 1995
+Wirth 是 Pascal、Modula-2、Oberon 的设计者，1984 图灵奖。他在 ETH Zürich 一生只做一件事：让语言与系统再简单一点。本文给出"Wirth 定律"——软件变慢的速度比硬件变快的速度更快——并讨论为什么。短，恼火，对今天仍然适用。
 
-端到端论证：可靠性、安全、加密这些事，只有在通信链路的两端做才能做对；中间环节最多顺便加速，替代不了端点。今天互联网很多关于分层、可靠性边界的设计选择，回到它都还能校准。读它，是为了搞清楚这条边界为什么在那里、什么时候你不该把功能往下沉。
+### [Notes on Programming in C](languages/pike_notes_on_c.md) — Rob Pike, 1989
+Pike 在 Bell Labs（C 与 Unix 的诞生地）与 K&R 同处一屋檐下做 Unix。后来共同发明 UTF-8、设计 Plan 9，再后来在 Google 主导 Go。本文是他在贝尔实验室时期写的非正式 notes，讲 C 的命名、分支、数据结构选择——短，密度高，每一条都从一个真做过 Unix 内核的人手里出来。
 
-[systems/wirth_lean_software.md](systems/wirth_lean_software.md) — A Plea for Lean Software (1995) · Niklaus Wirth
+---
 
-Pascal、Modula、Oberon 的作者。那句话——"软件变慢的速度比硬件变快还快"——对得不能再对，2026 年只会更对。但他给的处方就弱多了：他没真正回答一个最难的问题——为什么更 lean 的系统和语言常常在市场上赢不下来。这篇当一种道德承诺读，别当工程方案读。
+## 三、编程作为思考
 
-## 语言与编程
+这一组的共同前提：编程不主要是打字，编程是想清楚。
 
-语言怎么塑造思考，代码怎么塑造行为。
+### [Simple Made Easy](languages/hickey_simple_made_easy.md) — Rich Hickey, 2011
+Hickey 是 Clojure 与 Datomic 的设计者，一个人（后来加入少数几人）做出了一门被严肃公司大规模采用的语言。在那之前他做过十几年作曲——这件事影响了他对"事物如何相互交织"的判断。本文（原为一场 talk）论证 *simple*（客观，未交织）与 *easy*（主观，熟悉）的区别。这套区分一旦看清楚，很多技术选型的争论会自动失语。
 
-[languages/backus_can_programming_be_liberated.md](languages/backus_can_programming_be_liberated.md) — Can Programming Be Liberated from the von Neumann Style? (1977) · John Backus
+### [Hammock Driven Development](languages/hickey_hammock_driven_development.md) — Rich Hickey, 2010
+同上。讲的是真正的工作发生在你不打字的时间里——躺在吊床上，让问题在背景中转。讲深度思考为什么不能被冲刺替代。
 
-FORTRAN 的发明人回过头来说，FORTRAN 这类语言根本错了——它把 von Neumann 瓶颈直接写进了语言。野心大，但话也说重了：他给的替代方案 FP、FFP 没赢，命令式语言也没有他描述得那么残疾，它带着代价，但还是一种能用的工具。精神倒是被部分吸收了——今天到处是函数式元素。真正独特的是一种姿态：一个工具的发明人反过来论证这件工具本身错了，这种姿态在工程文献里非常罕见。
+### [The Emperor's Old Clothes](career/hoare_emperors_old_clothes.md) — C.A.R. Hoare, 1980
+Hoare 发明了快速排序、Hoare logic、CSP（Go 的并发模型来源于此）。这是他 1980 年的图灵奖演讲。本文是他对自己职业生涯的反省，包含著名的"十亿美元的错误"——空引用是他在 ALGOL W 中引入的，他公开为此道歉。一位资深从业者用自己的名字承认错误的文章。
 
-[languages/hickey_simple_made_easy.md](languages/hickey_simple_made_easy.md) — Simple Made Easy (2011) · Rich Hickey
+### [Can Programming Be Liberated from the von Neumann Style?](languages/backus_can_programming_be_liberated.md) — John Backus, 1977
+Backus 发明了 FORTRAN——在他写这篇之前，"高级语言"这个概念基本是他建立的。他在 IBM 工作了三十多年。这篇是他的图灵奖演讲。他在文中批评了他自己一辈子工作所奠基的范式：基于 von Neumann 架构的命令式编程。一个人在职业生涯顶峰公开质疑自己所建之物——这一姿态本身就值得读。
 
-把 simple（单一职责、解开了的）和 easy（顺手、就在手边）分开。这个区分真的成立，加上他对词源的解读（complex 本意是"编织在一起"），更容易粘住脑子。它给一个几乎每场软件争论里都在打转的混淆起了名字——一旦你有了这对词，那种混淆就立不住了。
+### [On the Cruelty of Really Teaching Computer Science](career/dijkstra_cruelty.md) — Edsger Dijkstra, 1988
+Dijkstra 1972 图灵奖。算法、结构化编程、形式方法。脾气大，文笔毒辣。他用手稿（EWD 系列）写了几十年，每篇签自己名字。本文论证：计算机科学本质上是形式符号操作，不是工程。立场极端——但极端立场容易暴露问题。读他不是为了同意，是为了被迫表态。
 
-[languages/hickey_hammock_driven_development.md](languages/hickey_hammock_driven_development.md) — Hammock Driven Development (2010) · Rich Hickey
+---
 
-主旨：硬问题需要离开键盘的思考时间，包括睡眠。他对认知科学的引用挺松散，但实践上的建议——明确给自己留"看起来不像工作的时间"——是反着所有现代开发环境的默认值的。在 AI 让动手成本几乎归零的 2026 年，反而更值钱。
+## 四、时间与信任
 
-[languages/pike_notes_on_c.md](languages/pike_notes_on_c.md) — Notes on Programming in C (1989) · Rob Pike
+两篇基础假设的重审。一个动了"时间"，一个动了"信任"。
 
-贝尔实验室时期 Rob Pike 的笔记。Rules 1–6（没量过就别优化；数据结构比算法更重要）撑得住时间。但很多风格条目是 C 文化的产物，翻译到今天要打折扣。它真正独特的地方在于：贝尔实验室那一脉"小心翼翼的简单"，没人比这篇说得更紧。
+### [Time, Clocks, and the Ordering of Events](systems/lamport_time_clocks.md) — Leslie Lamport, 1978
+Lamport 2013 图灵奖。LaTeX 是他写的。Paxos、TLA+ 也是。分布式系统这一大半个领域是他建的。本文引入逻辑时钟与因果序——给"两个相距事件谁在先"这个问题第一个干净的答案。之后所有分布式系统的讨论都建立在这个基础上。
 
-## AI 与机器学习
+### [Reflections on Trusting Trust](career/thompson_trusting_trust.md) — Ken Thompson, 1984
+Thompson 与 Ritchie 共同造了 Unix，也参与了 B、UTF-8、Plan 9、Go。1983 图灵奖。这是他的图灵奖演讲。他展示一种攻击：编译器可以被植入后门，而这个后门可以在它编译自身时再种入自身——源码里看不见，但代代相传。短。读完之后你看软件供应链的方式会变。
 
-智能是什么，编程被它改写到什么程度。
+---
 
-✎ [ai/turing_computing_machinery_intelligence.md](ai/turing_computing_machinery_intelligence.md) — Computing Machinery and Intelligence (1950) · Alan Turing
+## 五、AI 的根基
 
-AI 哲学的源头。"模仿游戏"这个设定比"机器能不能思考"这个原问题更耐用——它把看不见的"思维"换成看得见的"分辨不出来"，这一换，今天每一场 AI 评估的争论都还在用。意外地好读，2026 年讲 AI 的话大半还没跳出他画的那个框。
+四篇覆盖三个范式（图灵测试 / 符号 AI / 深度学习）和一个总结性判断。
 
-✎ [ai/newell_simon_empirical_inquiry.md](ai/newell_simon_empirical_inquiry.md) — Computer Science as Empirical Inquiry (1976) · Newell & Simon
+### [Computing Machinery and Intelligence](ai/turing_computing_machinery_intelligence.md) — Alan Turing, 1950
+Turing 一个人把"计算"这件事的形式定义做出来。战时破解 Enigma。1952 因同性恋被英国法庭定罪并强制荷尔蒙治疗，两年后死，41 岁。本文提出图灵测试。但更值得读的部分在后半：他对"机器不能思考"的九种典型反驳逐一回应。这九种反驳今天仍在被反复重提——他七十多年前就已经答完。
 
-物理符号系统假说：智能就是一套操作符号的物理系统。AI 作为 CS 的奠基哲学立场就在这里。但 2026 年读它，更多是知道有过这么个立场，不一定真要拿来用——深度学习已经把这个立场至少推到了"必要但不充分"。
+### [The Bitter Lesson](ai/sutton_bitter_lesson.md) — Richard Sutton, 2019
+Sutton 是强化学习两位奠基人之一，与 Barto 合写了那本经典教材。从 1980 年代起在做 RL——四十多年。2024 年与 Barto 共同获图灵奖。本文极短（不到两千字），但争议巨大。论点：AI 七十年的经验表明，依赖通用方法+算力的路径，长期总赢过依赖人类领域知识的路径。直接预言了今天大模型范式的胜利。
 
-[ai/karpathy_software_2_0.md](ai/karpathy_software_2_0.md) — Software 2.0 (2017) · Andrej Karpathy
+### [Software 2.0](ai/karpathy_software_2_0.md) — Andrej Karpathy, 2017
+Karpathy 是 Fei-Fei Li 的博士、OpenAI 创始成员、特斯拉 AI 总监；他的 CS231n 和后来的 nanoGPT 教程影响了一整代人。本文是篇短博客，但提出了一个被广泛采用的框架：神经网络是一种新的写软件的方式——你定义目标行为，让搜索（梯度下降）替你写程序。2017 年提出时并不显然，今天回头看几乎是事实陈述。
 
-"编程"在分裂成两件事：写显式逻辑（1.0），和给数据加损失函数让模型自己学出行为（2.0）。这个区分比"用 AI 写代码"那类说法深得多——它说的不是工具，是软件本身在裂开。每次你犹豫"我现在是在写代码，还是在调一个模型"，回到这里。
+### [Computer Science as Empirical Inquiry](ai/newell_simon_empirical_inquiry.md) — Newell & Simon, 1976
+两位都在 CMU，1975 图灵奖。Simon 同时是 1978 经济学诺奖得主——很少有人同时在 AI、决策科学、组织行为、心理学留下基础工作。两人合作四十多年。本文是他们联合图灵奖演讲，提出"物理符号系统假说"：智能的充分必要条件是符号操作。这是经典符号 AI 的奠基命题，也是后来联结主义与深度学习要回应的命题。
 
-[ai/sutton_bitter_lesson.md](ai/sutton_bitter_lesson.md) — The Bitter Lesson (2019) · Richard Sutton
+---
 
-一句话总结 AI 这 70 年：每次你想把人的知识手工编码进系统，长期都会输给那些靠算力做搜索和学习的方法。这条规律解释了为什么专家系统输给统计 ML、统计 ML 输给深度学习、深度学习还在往更大的算力堆。短，几页纸。但凡要评估 AI 路径，都得拿它来量。一年读一次都不亏。
+## 六、做出好东西
 
-## 职业与思考
+两篇 meta：怎么挑要做的事，以及怎么做。
 
-怎样做有分量的工作。做事的人该怎么想问题。
+### [You and Your Research](career/hamming_you_and_your_research.md) — Richard Hamming, 1986
+Hamming 是 Bell Labs 的人——和 Shannon、Tukey 在同一栋楼的同一代人。误差校正码是他做的。Manhattan 项目早期他在场。他用职业生涯的后半段反复琢磨同一个问题：为什么有些人做出的工作能留下来，绝大多数人不能？本文是他在 Bell Labs 的一场演讲。直白，不留情面：如果你不在重要的问题上工作，你不会做出重要的工作。其它一切优先级判断都从这一句出发。
 
-[career/brooks_no_silver_bullet.md](career/brooks_no_silver_bullet.md) — No Silver Bullet (1986) · Fred Brooks
-
-论点：没有哪一种单一技术能让软件开发提效 10x，因为软件的难处大半是本质的（写规约、做设计、测概念结构），不是附属的（工具不顺手那种）。40 年过去这个判断撑住了——语言、IDE、版本控制、云，没有一个真的给了 10x。今天唯一悬着的问题是：AI 是不是要打破这条？Brooks 给了评估这个问题的框架。它真正独特的，是一个分类法——过去 40 年所有提效声明都能装进去。
-
-[career/dijkstra_cruelty.md](career/dijkstra_cruelty.md) — On the Cruelty of Really Teaching Computer Science (1988) · Edsger Dijkstra
-
-一篇容易让人站队的檄文。有些洞见是真的——他批评把计算机拟人化的那种说法（"计算机思考、记忆、学习"这类话偷偷塞进了不该有的本体论），这一刀挺准；有些就是精英主义而且错，比如说 BASIC 用户脑子已经废了。它的价值是激起反驳，不是当指南。带着不同意去读。
-
-✎ [career/hamming_you_and_your_research.md](career/hamming_you_and_your_research.md) — You and Your Research (1986) · Richard Hamming
-
-一份"怎么让你的研究不平庸"的实操手册，不是回忆录。两个核心问题——"你最重要的问题是什么？""为什么不在做它？"——简单、普适、扎人。Hamming 自己活在贝尔实验室那种允许员工下班做自己研究的环境里，具体建议带着那个环境的影子，但那两个问题穿过任何环境都还在。
-
-[career/hoare_emperors_old_clothes.md](career/hoare_emperors_old_clothes.md) — The Emperor's Old Clothes — ACM Turing Lecture (1980) · C.A.R. Hoare
-
-一个工程师跨越几十年的自传式演讲：Algol 60 的设计、CSP 的来源、为发明 null 引用公开道歉。具体技术细节过时了，但那个最大的教训——你该减功能，不是加——一直成立。一个老资格工程师当众复盘自己当年错的地方，这种东西在工程文献里很少见。
-
-[career/shannon_creative_thinking.md](career/shannon_creative_thinking.md) — Creative Thinking (1952) · Claude Shannon
-
-信息论的奠基者讲他自己怎么做创造性工作。给了一份动作清单：简化、找类似问题、换种表示、推广、反证。方法本身不是 Shannon 原创的（Polya 也讲过类似的），但 Shannon 的压缩力和权威让这份清单落得下来。它独特的地方是：一个真正在第一档做出东西的人，亲口讲自己的方法。
-
-[career/thompson_trusting_trust.md](career/thompson_trusting_trust.md) — Reflections on Trusting Trust — ACM Turing Lecture (1984) · Ken Thompson
-
-大约 5 页，证明了一件深的事：信任总要在某处停下来，而软件的信任链可以在根上被动手脚——一个被植入的编译器能让自己一直复制下去，哪怕你重新用干净的源码编译它。今天的供应链攻击（xz、SolarWinds）就是这件事的现实版本。一个证明，永久改变你看软件信任的方式。
+### [Creative Thinking](career/shannon_creative_thinking.md) — Claude Shannon, 1952
+Shannon 一个人造出了信息论。MIT 的人，玩独轮车，会变魔术。能在一个人的工作里看到一个完整学科被完整铺设——上世纪只有少数几个例子，他是其中之一。本文是他 1952 年在贝尔实验室的一场非正式演讲，录音残存。讲的是他自己面对一个问题时的几种手法——简化、类比、提问、反向。罕见——天才本人愿意把自己工作时的内部步骤说出来，而且说得朴素。
