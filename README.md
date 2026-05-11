@@ -17,25 +17,21 @@
 
 这些工具一旦在脑子里成形，就再也看不见旧的混淆。skill 把它们从"偶尔想起来"固化成"Agent 稳定调用"。
 
-## 三个部件
+## 两个部件
 
 **canon 是水源。** 经典文章的中文版，每篇附一段独立判断——不是摘要，是"它独特在哪里、哪里被高估、值不值得反复回来翻"。判断要承担责任，摘要只是复述。
 
-**skills 是水管。** 把从 canon 里读出来的判断、方法、检查清单，重新组织成 Agent 可以调用的形式。每个 skill 独立目录，`SKILL.md` 是单一事实来源。
-
-**templates 是模具。** 新 skill 从这里复制起步。
+**skills 是水管。** 把从 canon 里读出来的判断、方法、检查清单，重新组织成 Agent 可以调用的形式。每个 skill 独立目录，`SKILL.md` 是单一事实来源。形状随 skill 自己长，不预设模板（见下面"不做什么"）。
 
 ```
 vidya/
 ├── canon/           # 经典文章中文版 + 独立判断
-├── skills/          # 可复用的 Agent skills
-│   └── <skill-name>/
-│       ├── SKILL.md       # 单一事实来源
-│       ├── references/
-│       ├── scripts/
-│       └── assets/
-└── templates/
-    └── skill/             # 新 skill 起步模板
+└── skills/          # 可复用的 Agent skills
+    └── <skill-name>/
+        ├── SKILL.md       # 单一事实来源
+        ├── references/    # 可选
+        ├── scripts/       # 可选
+        └── assets/        # 可选
 ```
 
 ## 受众
