@@ -96,7 +96,7 @@ FORTRAN 的发明者反过来论证 FORTRAN 这类语言根本错了，把 von N
 
 "编程"这件事正在被重新定义，这是把那个重新定义说清楚的文章。
 
-### ✎ [ai/sutton_bitter_lesson.md](ai/sutton_bitter_lesson.md) — The Bitter Lesson (2019) · Richard Sutton
+### [ai/sutton_bitter_lesson.md](ai/sutton_bitter_lesson.md) — The Bitter Lesson (2019) · Richard Sutton
 
 过去十年最有重量的短文，没有之一。组织了"如何思考 AI 进步"这件事。短到几页，每年回去读都不亏。
 
