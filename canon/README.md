@@ -48,7 +48,7 @@ Bush 的愿景，Licklider 的共生，Victor 的当代继承——中间最关�
 
 信息隐藏的源头。它用同一个问题（KWIC index）的两种分解对比，把"按步骤切 vs 按变化点切"从意见变成了论证。这个论证方法本身比结论更值钱——它教你怎么把模块化的争论从口味之争抬到证据之争。
 
-### ✎ [systems/saltzer_reed_clark_end_to_end.md](systems/saltzer_reed_clark_end_to_end.md) — End-to-End Arguments in System Design (1984) · Saltzer, Reed, Clark
+### [systems/saltzer_reed_clark_end_to_end.md](systems/saltzer_reed_clark_end_to_end.md) — End-to-End Arguments in System Design (1984) · Saltzer, Reed, Clark
 
 过去 50 年最有影响的系统论文之一，整个互联网的架构哲学搁在它上面。有 Lamport 没有它，像有牛顿没有伽利略。
 
