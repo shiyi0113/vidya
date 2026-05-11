@@ -1,8 +1,8 @@
 # canon
 
-计算机科学领域奠基性的论文、演讲、笔记。每一篇都是某个非常聪明的人花了大量时间想清楚、再用力压缩出来的东西。
+各学科奠基性的论文、演讲、笔记——目前以计算机科学为主，但不止于此。每一篇背后，都沉淀着有人多年的经验、思考，以及他消化过的别人的工作。
 
-每篇下面那段是我自己的判断，只回答三件事：**它独有什么、哪里说过头了、值不值得反复翻**。不是摘要。标 ✎ 的还没翻译。
+每篇下面那段是我的判断，只回答三件事：它独到在哪、哪里说过头了、值不值得反复翻。不是摘要。标 ✎ 的还没翻译。
 
 按"会被脑子调用的频率"排了一个分级——从"每天用的刀"到"读一次就够"——见 [PRIORITY.md](PRIORITY.md)。下面这份目录按主题分，不按优先级。
 
@@ -16,15 +16,15 @@ Bush 那篇是诗，这篇是工程。Engelbart 把"用工具增强人"落成一
 
 [vision/licklider_symbiosis.md](vision/licklider_symbiosis.md) — Man-Computer Symbiosis (1960) · J.C.R. Licklider
 
-把人擅长什么、机器擅长什么各自掰开说，然后主张一种特别的关系：不是机器替人，不是机器当工具，是共生。这篇在 2026 年读惊人地当下——他对人机分工的判断大体还成立，只是 LLM 把那条边界往机器那边推了一点。今天讲"人 AI 协作"，最早严肃的讨论就在这里，没替代品。
+把人擅长什么、机器擅长什么各自掰开说，然后主张一种特别的关系：不是机器替人，不是机器当工具，是共生。这篇放到 2026 年读还是格外贴当下——他对人机分工的判断大体还成立，只是 LLM 把那条边界往机器那边推了一截。今天讲"人 AI 协作"，最早一份认真讨论就在这里。
 
 [vision/victor_inventing_on_principle.md](vision/victor_inventing_on_principle.md) — Inventing on Principle (2012) · Bret Victor
 
-是演讲，不是论文。Victor 说，伟大的工作来自找到一条原则，然后让它管住一切。演示部分是顶级修辞，但他真正在说的是一种关于创作的心理学主张——可以争，很多伟大的工作来自具体问题而不是原则。带着怀疑去看：他用极致的演示让一个未必普适的论点显得自明。它真正独特的地方，是把"原则驱动"这件事抬上桌面认真讨论。
+是演讲，不是论文。Victor 说，伟大的工作来自先找到一条原则，然后让它管住一切。演示部分是顶级修辞，但他真正在说的是一种关于创作的心理学主张——这套话可以争，很多伟大的工作并不是从原则出发，而是从一个具体问题、一种反复撞到的限制里长出来的。带着怀疑去看：他用极致的演示让一个未必普适的论点显得自明。它真正独特的，是把"原则驱动的创作"抬上桌面认真讨论。
 
 [vision/victor_learnable_programming.md](vision/victor_learnable_programming.md) — Learnable Programming (2012) · Bret Victor
 
-表面在批 Khan Academy，实际是一套编程的认知理论：大部分编程时间花在脑子里跑程序状态——环境只要把状态显出来，这部分工作就消失了。论证比《Inventing on Principle》扎实得多。这套话没人能反驳，但十多年过去，现实进展很慢。读它会让你重新看那些"看着在写代码、其实在脑子里跑模拟"的时间。
+表面在批 Khan Academy，实际是一套编程的认知理论：大部分编程时间花在脑子里跑程序状态——环境只要把状态显出来，这部分工作就消失了。论证比《Inventing on Principle》扎实得多。这套话很难正面反驳，但十多年过去，现实里的工具进展依然很慢。读它会让你重新看那些"看着在写代码、其实在脑子里跑模拟"的时间。
 
 ## 系统设计
 
@@ -44,11 +44,11 @@ Bush 那篇是诗，这篇是工程。Engelbart 把"用工具增强人"落成一
 
 [systems/saltzer_reed_clark_end_to_end.md](systems/saltzer_reed_clark_end_to_end.md) — End-to-End Arguments in System Design (1984) · Saltzer, Reed, Clark
 
-端到端论证：可靠性、安全、加密这些事，只有在通信链路的两端做才能做对；中间环节最多顺便加速，替代不了端点。今天互联网几乎所有的分层选择都是它支起来的。读它，是为了搞清楚这条边界为什么在那里、什么时候你不该把功能往下沉。
+端到端论证：可靠性、安全、加密这些事，只有在通信链路的两端做才能做对；中间环节最多顺便加速，替代不了端点。今天互联网很多关于分层、可靠性边界的设计选择，回到它都还能校准。读它，是为了搞清楚这条边界为什么在那里、什么时候你不该把功能往下沉。
 
 [systems/wirth_lean_software.md](systems/wirth_lean_software.md) — A Plea for Lean Software (1995) · Niklaus Wirth
 
-Pascal、Modula、Oberon 的作者。那句话——"软件变慢的速度比硬件变快还快"——对得不能再对，2026 年只会更对。但他给的处方就弱多了：Wirth 没真回答"为什么 lean software 在市场上输了"，他自己做的语言也没赢。这篇当一种道德承诺读，别当工程方案读。
+Pascal、Modula、Oberon 的作者。那句话——"软件变慢的速度比硬件变快还快"——对得不能再对，2026 年只会更对。但他给的处方就弱多了：他没真正回答一个最难的问题——为什么更 lean 的系统和语言常常在市场上赢不下来。这篇当一种道德承诺读，别当工程方案读。
 
 ## 语言与编程
 
@@ -56,11 +56,11 @@ Pascal、Modula、Oberon 的作者。那句话——"软件变慢的速度比硬
 
 [languages/backus_can_programming_be_liberated.md](languages/backus_can_programming_be_liberated.md) — Can Programming Be Liberated from the von Neumann Style? (1977) · John Backus
 
-FORTRAN 的发明人回过头来说，FORTRAN 这类语言根本错了——它把 von Neumann 瓶颈直接写进了语言。野心大，但有一半是错的：他给的替代方案（FP、FFP）没赢。精神倒是被部分吸收了（今天到处是函数式元素），但 Backus 把话说重了——命令式语言不是残疾，就是一种工具。真正独特的是一种姿态：一个工具的发明人反过来论证这件工具本身错了，这种姿态非常罕见。
+FORTRAN 的发明人回过头来说，FORTRAN 这类语言根本错了——它把 von Neumann 瓶颈直接写进了语言。野心大，但话也说重了：他给的替代方案 FP、FFP 没赢，命令式语言也没有他描述得那么残疾，它带着代价，但还是一种能用的工具。精神倒是被部分吸收了——今天到处是函数式元素。真正独特的是一种姿态：一个工具的发明人反过来论证这件工具本身错了，这种姿态在工程文献里非常罕见。
 
 [languages/hickey_simple_made_easy.md](languages/hickey_simple_made_easy.md) — Simple Made Easy (2011) · Rich Hickey
 
-把 simple（单一职责、解开了的）和 easy（顺手、就在手边）分开。这个区分真的成立，加上他对词源的解读（complex 本意是"编织在一起"），更容易粘住脑子。它给一个几乎每场软件争论里都在打转的混淆起了名字——一旦你有了这对词，那个旧的混淆就消失了。
+把 simple（单一职责、解开了的）和 easy（顺手、就在手边）分开。这个区分真的成立，加上他对词源的解读（complex 本意是"编织在一起"），更容易粘住脑子。它给一个几乎每场软件争论里都在打转的混淆起了名字——一旦你有了这对词，那种混淆就立不住了。
 
 [languages/hickey_hammock_driven_development.md](languages/hickey_hammock_driven_development.md) — Hammock Driven Development (2010) · Rich Hickey
 
@@ -68,7 +68,7 @@ FORTRAN 的发明人回过头来说，FORTRAN 这类语言根本错了——它�
 
 [languages/pike_notes_on_c.md](languages/pike_notes_on_c.md) — Notes on Programming in C (1989) · Rob Pike
 
-贝尔实验室时期 Rob Pike 的笔记。Rules 1–6（没量过就别优化；数据结构比算法更重要）经得起时间。但很多风格条目是 C 文化的产物，翻译到今天要打折扣。它真正独特的地方在于：贝尔实验室那一脉"小心翼翼的简单"，没人比这篇说得更紧。
+贝尔实验室时期 Rob Pike 的笔记。Rules 1–6（没量过就别优化；数据结构比算法更重要）撑得住时间。但很多风格条目是 C 文化的产物，翻译到今天要打折扣。它真正独特的地方在于：贝尔实验室那一脉"小心翼翼的简单"，没人比这篇说得更紧。
 
 ## AI 与机器学习
 
@@ -76,11 +76,11 @@ FORTRAN 的发明人回过头来说，FORTRAN 这类语言根本错了——它�
 
 ✎ [ai/turing_computing_machinery_intelligence.md](ai/turing_computing_machinery_intelligence.md) — Computing Machinery and Intelligence (1950) · Alan Turing
 
-AI 哲学的源头。"模仿游戏"这个设定比"机器能不能思考"这个原问题更耐用——它把看不见的"思维"换成看得见的"分辨不出来"，这一换，今天每一场 AI 评估的争论都还在用。出乎意料地好读，2026 年讲 AI 的话大半还没跳出他画的那个框。
+AI 哲学的源头。"模仿游戏"这个设定比"机器能不能思考"这个原问题更耐用——它把看不见的"思维"换成看得见的"分辨不出来"，这一换，今天每一场 AI 评估的争论都还在用。意外地好读，2026 年讲 AI 的话大半还没跳出他画的那个框。
 
 ✎ [ai/newell_simon_empirical_inquiry.md](ai/newell_simon_empirical_inquiry.md) — Computer Science as Empirical Inquiry (1976) · Newell & Simon
 
-物理符号系统假说：智能就是一套操作符号的物理系统。AI 作为 CS 的奠基哲学立场就在这里。但 2026 年读它，更多是知道有过这么个立场，不是真要拿来用——深度学习已经把这个立场至少推到了"必要但不充分"。
+物理符号系统假说：智能就是一套操作符号的物理系统。AI 作为 CS 的奠基哲学立场就在这里。但 2026 年读它，更多是知道有过这么个立场，不一定真要拿来用——深度学习已经把这个立场至少推到了"必要但不充分"。
 
 [ai/karpathy_software_2_0.md](ai/karpathy_software_2_0.md) — Software 2.0 (2017) · Andrej Karpathy
 
@@ -100,7 +100,7 @@ AI 哲学的源头。"模仿游戏"这个设定比"机器能不能思考"这个�
 
 [career/dijkstra_cruelty.md](career/dijkstra_cruelty.md) — On the Cruelty of Really Teaching Computer Science (1988) · Edsger Dijkstra
 
-一篇容易让人站队的檄文。有些洞见是真的——他批评把计算机拟人化的那种说法（"计算机思考、记忆、学习"这类话偷偷塞进了不该有的本体论），这一刀挺准；有些就是精英主义且错，比如说 BASIC 用户脑子已经废了。它的价值是激起反驳，不是当指南。带着不同意去读。
+一篇容易让人站队的檄文。有些洞见是真的——他批评把计算机拟人化的那种说法（"计算机思考、记忆、学习"这类话偷偷塞进了不该有的本体论），这一刀挺准；有些就是精英主义而且错，比如说 BASIC 用户脑子已经废了。它的价值是激起反驳，不是当指南。带着不同意去读。
 
 ✎ [career/hamming_you_and_your_research.md](career/hamming_you_and_your_research.md) — You and Your Research (1986) · Richard Hamming
 
