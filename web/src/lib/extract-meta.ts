@@ -37,14 +37,16 @@ export function extractMeta(body: string, fallbackTitle: string): CanonMeta {
   return { title, byline, source };
 }
 
+// Insertion order controls how categories appear on /canon/all.
+// Mirrors the section order in canon/README.md.
 export const CATEGORY_LABELS: Record<string, string> = {
+  inquiry: '探究的结构',
+  science: '科学如何运作',
+  form: '形式如何生成',
+  vision: '计算的愿景',
+  systems: '系统设计的工艺',
+  languages: '编程作为思考',
   ai: 'AI',
   career: '做出好东西',
   expression: '表达与压缩',
-  form: '形式如何生成',
-  inquiry: '探究的结构',
-  languages: '编程作为思考',
-  science: '科学如何运作',
-  systems: '系统设计的工艺',
-  vision: '计算的愿景',
 };
