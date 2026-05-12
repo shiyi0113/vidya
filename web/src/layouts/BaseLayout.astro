@@ -23,18 +23,10 @@ const isCanon = here.startsWith(`${base}/canon`) || here.startsWith('/canon');
     <title>{fullTitle}</title>
     {description && <meta name="description" content={description} />}
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-      crossorigin
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500&display=swap"
+      rel="alternate"
+      type="application/rss+xml"
+      title="vidyā · canon"
+      href={`${base}/rss.xml`}
     />
     <meta property="og:title" content={fullTitle} />
     {description && <meta property="og:description" content={description} />}
@@ -67,7 +59,9 @@ const isCanon = here.startsWith(`${base}/canon`) || here.startsWith('/canon');
         canon 是工作记录，会增也会减。原文版权归原作者或出版方。
       </p>
       <p style="margin-top: 0.5em;">
-        <a href="https://github.com/zoheth/vidya">在 GitHub 上查看 ›</a>
+        <a href="https://github.com/zoheth/vidya">在 GitHub 上查看</a>
+        <span aria-hidden="true"> · </span>
+        <a href={`${base}/rss.xml`}>RSS</a>
       </p>
     </footer>
   </body>

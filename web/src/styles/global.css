@@ -12,15 +12,20 @@
   --color-link: #1f1d1a;
   --color-link-hover: #6b4423;
 
-  /* Serif-first stack with Chinese-aware fallbacks */
+  /* System font stack — Chinese-aware, no web font dependencies */
   --font-serif:
-    'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong',
-    'Times New Roman', Georgia, 'Cambria', serif;
+    Georgia, Cambria, 'Times New Roman', Times,
+    'Songti SC', 'Songti TC', STSong,
+    'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN',
+    SimSun, serif;
   --font-sans:
-    'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
-    -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'PingFang SC', 'Hiragino Sans GB',
+    'Noto Sans CJK SC', 'Source Han Sans SC',
+    'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-mono:
-    'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+    'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
 
   /* Reading rhythm */
   --leading: 1.85;

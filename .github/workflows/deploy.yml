@@ -25,6 +25,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history so RSS pubDates can use git log
 
       - name: Setup Node
         uses: actions/setup-node@v4
