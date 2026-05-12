@@ -1,0 +1,74 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  pathname?: string;
+}
+
+const { title, description, pathname } = Astro.props;
+const fullTitle = title === 'vidyā' ? title : `${title} — vidyā`;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const here = pathname ?? Astro.url.pathname;
+const isHome = here === `${base}/` || here === '/';
+const isCanon = here.startsWith(`${base}/canon`) || here.startsWith('/canon');
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500&display=swap"
+    />
+    <meta property="og:title" content={fullTitle} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-header__brand" href={`${base}/`}>
+        vidyā<span class="sanskrit">विद्या</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href={`${base}/`} aria-current={isHome ? 'page' : undefined}>
+          关于
+        </a>
+        <a
+          href={`${base}/canon/`}
+          aria-current={isCanon ? 'page' : undefined}
+        >
+          canon
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        canon 是工作记录，会增也会减。原文版权归原作者或出版方。
+      </p>
+      <p style="margin-top: 0.5em;">
+        <a href="https://github.com/zoheth/vidya">在 GitHub 上查看 ›</a>
+      </p>
+    </footer>
+  </body>
+</html>
