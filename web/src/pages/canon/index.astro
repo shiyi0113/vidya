@@ -1,0 +1,17 @@
+---
+import { getEntry, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const entry = await getEntry('pages', 'canon/readme');
+if (!entry) throw new Error('canon/README not found');
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  title="canon"
+  description="canon · 索引。持续更新——会增，也会减。"
+>
+  <article class="shell prose">
+    <Content />
+  </article>
+</BaseLayout>

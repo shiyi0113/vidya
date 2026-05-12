@@ -1,0 +1,14 @@
+---
+import { getEntry, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const entry = await getEntry('pages', 'readme');
+if (!entry) throw new Error('Project README not found');
+const { Content } = await render(entry);
+---
+
+<BaseLayout title="vidyā" description="一个以人为先、AI 辅助的个人认知项目。">
+  <article class="shell prose">
+    <Content />
+  </article>
+</BaseLayout>
