@@ -1,0 +1,76 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { extractMeta, CATEGORY_LABELS } from '../../lib/extract-meta';
+
+const entries = await getCollection('canon');
+
+type Item = {
+  category: string;
+  slug: string;
+  title: string;
+  byline: string | null;
+};
+
+const items: Item[] = entries.map((entry) => {
+  const meta = extractMeta(entry.body ?? '', entry.id);
+  const parts = entry.id.split('/');
+  return {
+    category: parts[0],
+    slug: parts.slice(1).join('/'),
+    title: meta.title,
+    byline: meta.byline,
+  };
+});
+
+// Group by category, preserving the order in CATEGORY_LABELS.
+const grouped = new Map<string, Item[]>();
+for (const cat of Object.keys(CATEGORY_LABELS)) {
+  grouped.set(cat, []);
+}
+for (const item of items) {
+  if (!grouped.has(item.category)) grouped.set(item.category, []);
+  grouped.get(item.category)!.push(item);
+}
+for (const list of grouped.values()) {
+  list.sort((a, b) => a.title.localeCompare(b.title, 'zh-Hans-CN'));
+}
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const total = items.length;
+---
+
+<BaseLayout
+  title="全部 · canon"
+  description={`canon 全部文章，共 ${total} 篇。按分类列出。`}
+>
+  <article class="shell shell--wide">
+    <h1>全部 · {total} 篇</h1>
+    <p class="lede">
+      平铺浏览。叙事性索引在
+      <a href={`${base}/canon/`}>canon</a>。
+    </p>
+
+    {
+      [...grouped.entries()]
+        .filter(([, list]) => list.length > 0)
+        .map(([cat, list]) => (
+          <section class="dir">
+            <h2>{CATEGORY_LABELS[cat] ?? cat}</h2>
+            <ul class="dir-list">
+              {list.map((item) => (
+                <li>
+                  <a href={`${base}/canon/${item.category}/${item.slug}/`}>
+                    {item.title}
+                  </a>
+                  {item.byline && (
+                    <span class="dir-byline"> — {item.byline}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+    }
+  </article>
+</BaseLayout>
