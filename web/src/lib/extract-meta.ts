@@ -37,14 +37,18 @@ export function extractMeta(body: string, fallbackTitle: string): CanonMeta {
   return { title, byline, source };
 }
 
+// Directory-based topic labels for the flat browse page (/canon/all).
+// These reflect the file layout (by subject) — not the canon/README narrative
+// sections (看见/造物/反躬/立命), which group articles by what they do
+// to the reader. A single directory often spans multiple narrative sections.
 export const CATEGORY_LABELS: Record<string, string> = {
+  inquiry: '探究',
+  science: '科学',
+  form: '形式',
+  vision: '愿景',
+  systems: '系统',
+  languages: '语言',
   ai: 'AI',
-  career: '做出好东西',
-  expression: '表达与压缩',
-  form: '形式如何生成',
-  inquiry: '探究的结构',
-  languages: '编程作为思考',
-  science: '科学如何运作',
-  systems: '系统设计的工艺',
-  vision: '计算的愿景',
+  career: '事业',
+  expression: '表达',
 };
