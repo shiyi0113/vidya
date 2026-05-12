@@ -74,6 +74,9 @@ Hickey 是 Clojure 与 Datomic 的设计者，一个人（后来加入少数几�
 ### [Hammock Driven Development](languages/hickey_hammock_driven_development.md) — Rich Hickey, 2010
 同上。讲的是真正的工作发生在你不打字的时间里——躺在吊床上，让问题在背景中转。讲深度思考为什么不能被冲刺替代。
 
+### [Programming as Theory Building](languages/naur_programming_as_theory_building.md) — Peter Naur, 1985
+Naur 是 ALGOL 60 的设计者之一，BNF 范式（Backus-Naur Form）的共同命名者，2005 年图灵奖。本文的核心命题是：程序不是源码。程序是程序员脑子里共同持有的一种理解——借用哲学家 Ryle 的概念，Naur 称之为 theory。代码只是这个 theory 的有损书面投影。团队解散，程序就死了；文档留下来，但 theory 带不走。这解释了为什么接手别人的代码如此之难，为什么修改总是把结构改坏，以及为什么有时候推倒重写比修复更便宜。
+
 ### [The Emperor's Old Clothes](career/hoare_emperors_old_clothes.md) — C.A.R. Hoare, 1980
 Hoare 发明了快速排序、Hoare logic、CSP（Go 的并发模型来源于此）。这是他 1980 年的图灵奖演讲。本文是他对自己职业生涯的反省，包含著名的"十亿美元的错误"——空引用是他在 ALGOL W 中引入的，他公开为此道歉。一位资深从业者用自己的名字承认错误的文章。
 
