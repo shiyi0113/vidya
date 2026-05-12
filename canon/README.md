@@ -120,10 +120,64 @@ Karpathy 是 Fei-Fei Li 的博士、OpenAI 创始成员、特斯拉 AI 总监；
 
 ## 六、做出好东西
 
-两篇 meta：怎么挑要做的事，以及怎么做。
+三篇 meta：怎么挑要做的事，以及怎么做。Hamming 和 Hardy 给出两种截然相反的答案。
 
 ### [You and Your Research](career/hamming_you_and_your_research.md) — Richard Hamming, 1986
 Hamming 是 Bell Labs 的人——和 Shannon、Tukey 在同一栋楼的同一代人。误差校正码是他做的。Manhattan 项目早期他在场。他用职业生涯的后半段反复琢磨同一个问题：为什么有些人做出的工作能留下来，绝大多数人不能？本文是他在 Bell Labs 的一场演讲。直白，不留情面：如果你不在重要的问题上工作，你不会做出重要的工作。其它一切优先级判断都从这一句出发。
 
 ### [Creative Thinking](career/shannon_creative_thinking.md) — Claude Shannon, 1952
 Shannon 一个人造出了信息论。MIT 的人，玩独轮车，会变魔术。能在一个人的工作里看到一个完整学科被完整铺设——上世纪只有少数几个例子，他是其中之一。本文是他 1952 年在贝尔实验室的一场非正式演讲，录音残存。讲的是他自己面对一个问题时的几种手法——简化、类比、提问、反向。罕见——天才本人愿意把自己工作时的内部步骤说出来，而且说得朴素。
+
+### [A Mathematician's Apology](career/hardy_mathematicians_apology.md) — G.H. Hardy, 1940
+Hardy 是二十世纪最重要的英国数学家之一，发现并培养了 Ramanujan。这本书写于他中风、无法再做数学之后，带着无可掩盖的暮年悲怆。他为"无用的数学"辩护——真正的数学，就像绘画与诗歌，是图案的制作；美是唯一的标准。放在 Hamming 旁边读：两人对"值得做的工作"给出了对立的两种答案，读者必须自己裁决。
+
+---
+
+## 七、科学如何运作
+
+两篇：一篇论科学诚实的内部条件，一篇论理论与实验的关系。
+
+### [Cargo Cult Science](science/feynman_cargo_cult_science.md) — Richard Feynman, 1974
+Feynman 的加州理工毕业典礼演讲。货物崇拜科学：形式上像科学，却缺少核心——竭尽全力去证明自己错了的那种诚实。他举了老鼠迷宫实验、ESP 研究、Millikan 测油滴等例子。核心命题：你最容易骗到的人，就是你自己。与 Hoare《皇帝的新衣》互为镜像：一个讲工程师的自我审视，一个讲科学家的自我审视。
+
+### [On the Method of Theoretical Physics](science/einstein_method_of_theoretical_physics.md) — Albert Einstein, 1933
+爱因斯坦在牛津大学的 Herbert Spencer 讲座。他的论点比人们预期的更激进：理论物理的基础不来自实验，来自数学的自由创造。实验只能验证，不能生成。他用牛顿和麦克斯韦举例，论证数学简洁性是寻找真理的指针。接 Backus《能否将编程从冯·诺依曼风格中解放出来》——两人都在职业顶峰公开质疑自己所建范式的基础。
+
+---
+
+## 八、探究的结构
+
+三篇：发现如何发生，知识如何成长，以及那些说不清楚的东西住在哪里。
+
+### [Mathematical Creation](inquiry/poincare_mathematical_creation.md) — Henri Poincaré, 1908
+《科学与方法》第三章。Poincaré 描述自己研究 Fuchsian 函数时的经历：苦苦工作，然后放下，某天早晨踏上公共马车的一刹那，答案突然涌现。他由此建立一个理论：无意识工作在后台进行组合，只把"美丽的"——数学上有生产力的——结果呈现给意识。最早、最系统地描述创造性顿悟机制的文本，是 Polanyi 和 Hickey 的思想前驱。
+
+### [The Tacit Dimension](inquiry/polanyi_tacit_dimension.md) — Michael Polanyi, 1966
+三篇讲座，核心命题是开篇一句话："我们知道的，比我们能说出的多。"默会知识有从-至结构：我们从线索出发，抵达我们正在关注的对象；线索本身退入背景，成为身体的延伸。Naur 的《作为理论建构的编程》直接引用了这个框架——程序员头脑中的"理论"，就是波兰尼意义上的默会知识。这解释了为什么接手别人代码如此之难：那些知识从未被写下来过。
+
+### [Proofs and Refutations](inquiry/lakatos_proofs_and_refutations.md) — Imre Lakatos, 1976
+以苏格拉底式对话的形式，展示数学知识如何在"证明-反例-修正"的循环中生长。以欧拉多面体公式（V−E+F=2）为主线，学生们不断提出反例，老师展示数学家面对反例的三种策略：怪物屏蔽（这不算真正的多面体）、例外屏蔽（修改命题）、引理并入（加固证明使反例不可能）。接 Naur——理论在反驳中生长，软件工程里的技术争论遵循同样的认识论结构。
+
+---
+
+## 九、形式如何生成
+
+两篇从不同角度问同一个问题：什么叫对的分解？
+
+### [A City Is Not a Tree](form/alexander_city_not_tree.md) — Christopher Alexander, 1965
+Alexander 论证：自然生长的城市是半网格结构——单元可以同时属于多个重叠的集合。人为规划的城市是树形结构——每个单元只属于一个容器，没有叠合。树形结构方便规划者思考，但砍断了给城市带来生命力的横向联系。剑桥报摊的例子：它同时属于行人世界、车行世界、居住世界和商业世界——这种叠合正是它的价值所在。接 Parnas《模块分解准则》和 Hickey《简单与容易》：什么叫对的分解，不是没有关联，而是关联在正确的层次上。
+
+### [The Architecture of Complexity](form/simon_architecture_of_complexity.md) — Herbert Simon, 1962
+Simon 论证：自然界与人工系统中的复杂性，普遍采取层级形式——由子系统构成，子系统再由更小的子系统构成。这不是偶然：层级系统可以从稳定的中间形态逐步组装，演化效率远高于平坦系统。Hora 与 Tempus 的钟表匠寓言是这个论证的核心。他引入"近可分解性"——子系统内部的耦合远强于子系统之间——这是 Alexander 的"叠合"在系统论语言中的精确描述：两篇一起读才完整。
+
+---
+
+## 十、表达与压缩
+
+两篇：一篇论语言的诚实，一篇论文学的密度。
+
+### [Politics and the English Language](expression/orwell_politics_english_language.md) — George Orwell, 1946
+Orwell 论证语言的腐化与政治的腐化互为因果：模糊的语言让模糊的思想得以通行；政治语言被设计成让谎言听起来像真话。他给出六条写作规则，最后一条是：如果遵守任何规则会让你说出蠢话，就打破它。核心命题：写不清楚，是因为没想清楚。接 README 内核"语言与压缩"——语言的清晰度不只是风格问题，是认识论问题。
+
+### [Six Memos for the Next Millennium](expression/calvino_six_memos.md) — Italo Calvino, 1985
+卡尔维诺在生命最后一年为哈佛诺顿讲座写下的六封信，只完成五封便去世。每封信凝炼他对文学一种核心价值的理解：轻盈、迅捷、确切、可见性、繁复，以及未写完的第六封。他用珀尔修斯斩美杜莎的神话讲轻盈，用水晶与火焰的对立讲确切。临终前的总结，每个字都有分量。接 README 内核"死亡与有限性"——正因为第六讲没有写完，这五讲才更像遗嘱。
