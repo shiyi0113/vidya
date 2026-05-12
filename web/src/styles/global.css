@@ -23,9 +23,13 @@
     'PingFang SC', 'Hiragino Sans GB',
     'Noto Sans CJK SC', 'Source Han Sans SC',
     'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* Mono falls back to CJK sans so Chinese in code blocks doesn't render
+     with a wrong-metric substitute glyph. */
   --font-mono:
-    'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
+    'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    'PingFang SC', 'Hiragino Sans GB',
+    'Noto Sans CJK SC', 'Source Han Sans SC',
+    'Microsoft YaHei', monospace;
 
   /* Reading rhythm */
   --leading: 1.85;
@@ -74,7 +78,7 @@ body {
   background: var(--color-bg);
   color: var(--color-ink);
   font-family: var(--font-serif);
-  font-feature-settings: 'kern', 'liga', 'palt';
+  font-feature-settings: 'kern', 'liga';
   line-height: var(--leading);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -182,20 +186,17 @@ p {
 
 a {
   color: var(--color-link);
-  text-decoration: none;
-  background-image: linear-gradient(var(--color-rule), var(--color-rule));
-  background-position: 0 1.05em;
-  background-repeat: no-repeat;
-  background-size: 100% 1px;
-  transition: color 120ms ease, background-image 120ms ease;
+  text-decoration: underline;
+  text-decoration-color: var(--color-rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  text-decoration-skip-ink: auto;
+  transition: color 120ms ease, text-decoration-color 120ms ease;
 }
 
 a:hover {
   color: var(--color-link-hover);
-  background-image: linear-gradient(
-    var(--color-link-hover),
-    var(--color-link-hover)
-  );
+  text-decoration-color: var(--color-link-hover);
 }
 
 strong {
@@ -311,12 +312,14 @@ img {
 
 .site-footer a {
   color: var(--color-ink-muted);
-  background-image: none;
+  text-decoration: none;
 }
 
 .site-footer a:hover {
   color: var(--color-ink);
-  background-image: none;
+  text-decoration: underline;
+  text-decoration-color: var(--color-rule);
+  text-underline-offset: 0.22em;
 }
 
 /* Essay-specific layout */
@@ -330,7 +333,7 @@ img {
 
 .essay-meta a {
   color: inherit;
-  background-image: none;
+  text-decoration: none;
   border-bottom: 1px dotted var(--color-rule);
   padding-bottom: 1px;
 }
@@ -352,12 +355,14 @@ img {
 
 .essay-category a {
   color: inherit;
-  background: none;
+  text-decoration: none;
 }
 
 .essay-category a:hover {
   color: var(--color-ink);
-  background: none;
+  text-decoration: underline;
+  text-decoration-color: var(--color-rule);
+  text-underline-offset: 0.22em;
 }
 
 /* Article body — slightly different rhythm */
@@ -387,12 +392,14 @@ img {
 }
 
 .canon-entry h3 a {
-  background-image: none;
+  text-decoration: none;
 }
 
 .canon-entry h3 a:hover {
   color: var(--color-link-hover);
-  background-image: none;
+  text-decoration: underline;
+  text-decoration-color: var(--color-link-hover);
+  text-underline-offset: 0.22em;
 }
 
 .canon-entry p {
@@ -419,12 +426,84 @@ img {
 
 .essay-end a {
   color: var(--color-ink-soft);
-  background-image: none;
+  text-decoration: none;
   border-bottom: 1px dotted var(--color-rule);
 }
 
 .essay-end a:hover {
   color: var(--color-ink);
+  border-bottom-color: var(--color-ink-soft);
+}
+
+/* Flat browse page — folder-style listing */
+.lede {
+  color: var(--color-ink-soft);
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  margin-bottom: var(--space-5);
+}
+
+.dir {
+  margin-bottom: var(--space-5);
+}
+
+.dir h2 {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  margin: var(--space-4) 0 var(--space-2);
+  padding-bottom: var(--space-1);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.dir-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.dir-list li {
+  padding: var(--space-1) 0;
+  border-bottom: 1px dotted transparent;
+  line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4em;
+}
+
+.dir-list li:hover {
+  border-bottom-color: var(--color-rule);
+}
+
+.dir-list a {
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dir-list a:hover {
+  color: var(--color-link-hover);
+}
+
+.dir-byline {
+  color: var(--color-ink-muted);
+  font-size: 0.88rem;
+  font-family: var(--font-sans);
+}
+
+@media (max-width: 600px) {
+  .dir-list li {
+    flex-direction: column;
+    gap: 0.1em;
+    align-items: flex-start;
+  }
+  .dir-list a {
+    white-space: normal;
+  }
 }
 
 /* Selection color */

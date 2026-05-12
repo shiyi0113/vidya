@@ -11,8 +11,10 @@ const { title, description, pathname } = Astro.props;
 const fullTitle = title === 'vidyā' ? title : `${title} — vidyā`;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const here = pathname ?? Astro.url.pathname;
-const isHome = here === `${base}/` || here === '/';
-const isCanon = here.startsWith(`${base}/canon`) || here.startsWith('/canon');
+const normalized = here.replace(base, '') || '/';
+const isHome = normalized === '/';
+const isAll = normalized === '/canon/all/' || normalized === '/canon/all';
+const isCanon = normalized.startsWith('/canon') && !isAll;
 ---
 
 <!doctype html>
@@ -46,6 +48,12 @@ const isCanon = here.startsWith(`${base}/canon`) || here.startsWith('/canon');
           aria-current={isCanon ? 'page' : undefined}
         >
           canon
+        </a>
+        <a
+          href={`${base}/canon/all/`}
+          aria-current={isAll ? 'page' : undefined}
+        >
+          全部
         </a>
       </nav>
     </header>
