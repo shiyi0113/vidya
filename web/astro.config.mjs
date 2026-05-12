@@ -14,7 +14,10 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [[rewriteCanonLinks, { base: BASE }]],
     shikiConfig: {
-      theme: 'github-light',
+      themes: {
+        light: 'github-light',
+        dark: 'github-dark',
+      },
       wrap: true,
     },
   },
