@@ -1,8 +1,10 @@
 # canon / 索引
 
-23 份入选，按"沉淀的厚度"和"对其他文章的解释力"组织成六类。
+持续更新——会增，也会减。读完之后觉得放错了的，会拿掉。
 
-每条按 vidyā 的入选标准看过：作者在这件事上花过至少几十年，付过代价，写的时候没有在表演。
+当前按"沉淀的厚度"和"对其他文章的解释力"分成几类，分类本身也会随内容变化调整。
+
+每一篇入选前都尽量按 vidyā 的标准看过：作者在这件事上花过很长时间，付过代价，写的时候没有在做姿态。宁缺毋滥。
 
 每一类内部按推荐阅读顺序排列——越靠前的，越能改变你读后面文章的方式。
 
@@ -28,13 +30,13 @@
 Engelbart 是鼠标、超文本、协同编辑的发明者；1968 年他主持的演示后来被称为 "the Mother of All Demos"，一次性预演了之后五十年的个人计算图景。他一生在做同一件事：让人类的集体智识被工具放大。本文是他这件事的纲领——提出 H-LAM/T 框架：人与他的语言、人工物、方法论、训练共同构成一个增智系统。我们今天习以为常的工作方式，几乎都可以追溯到这份纲领。
 
 ### [Man-Computer Symbiosis](vision/licklider_symbiosis.md) — J.C.R. Licklider, 1960
-Licklider 是 ARPA IPTO 的第一任主任。后来的互联网、个人计算的研究网络，是他用国防经费铺出来的。他自己是心理学出身——所以他从一开始就不把计算机看成"工具"，看成"伙伴"。本文比 Engelbart 早两年，提出"人机共生"：人定义问题、做判断，机器处理可形式化的部分。HCI 与交互式计算的源头。
+Licklider 是 ARPA IPTO 的第一任主任。后来的互联网、个人计算的研究网络，是他用国防经费铺出来的。他自己是心理学出身——所以他从一开始就不把计算机看成"工具"，看成"伙伴"。本文比 Engelbart 的文章早两年，提出"人机共生"：人定义问题、做判断，机器处理可形式化的部分。HCI 与交互式计算的源头。
 
 ### [Inventing on Principle](vision/victor_inventing_on_principle.md) — Bret Victor, 2012
 Victor 早年在 Apple 做交互设计，离开后用十多年时间打磨少数几篇极有重量的文章和演示（*Magic Ink*、*Up and Down the Ladder of Abstraction*），现在做 Dynamicland。他的产出节奏本身就在说明什么叫"在一件事上待够久"。本文是一场演讲。表面上讲"创造者需要与所创之物即时连接"，底下问的是：你愿意为某一条原则，组织你的一生吗？
 
 ### [Learnable Programming](vision/victor_learnable_programming.md) — Bret Victor, 2012
-同上作者。对 Khan Academy 编程课程的回应。论点是：程序员不该在脑子里执行代码——环境应当让抽象当下可见。深处问的是工具与思考之间的关系。
+同上作者。对 Khan Academy 编程课程的回应。论点是：程序员不该在脑子里执行代码——环境应当让抽象当下可见。背后问的是工具与思考之间的关系。
 
 ---
 
@@ -49,7 +51,7 @@ Lampson 是 1992 年图灵奖得主、Xerox PARC 的核心成员之一。Alto—
 Brooks 1999 图灵奖。早年在 IBM 领导 System/360——1960 年代最大的工程项目之一。他从那段亲身经历里写出了 *The Mythical Man-Month*，之后写了这篇。本文区分"本质复杂性"与"偶然复杂性"，预言十年内不会有任何单一技术带来一个数量级的生产力提升。三十多年过去，他基本对。
 
 ### [On the Criteria To Be Used in Decomposing Systems into Modules](systems/parnas_decomposing_modules.md) — David Parnas, 1972
-Parnas 是软件工程"信息隐藏"原则的奠基者。值得记住的一件事：八十年代美国搞星球大战导弹防御时，他是少数几个看清这件事在工程上不可能、辞职离开的科学家。他对责任的判断，写在他的工程判断里。本文用同一个系统（KWIC index）的两种分解方式，论证模块划分应依据"什么会变"，而非"系统按什么顺序运行"。是面向对象与现代软件架构的所有讨论的起点。
+Parnas 是软件工程"信息隐藏"原则的奠基者。值得记住的一件事：八十年代美国搞星球大战导弹防御时，他是少数几个看清这件事在工程上不可能、辞职离开的科学家。他对责任的立场，写在他的工程判断里。本文用同一个系统（KWIC index）的两种分解方式，论证模块划分应依据"什么会变"，而非"系统按什么顺序运行"。是面向对象与现代软件架构的所有讨论的起点。
 
 ### [End-to-End Arguments in System Design](systems/saltzer_reed_clark_end_to_end.md) — Saltzer, Reed, Clark, 1984
 三位都在 MIT。David Clark 在 1981–1989 担任互联网首席协议架构师——TCP/IP 真正成型的那几年，是他在主持。这三个人造的不是论文，是基础设施。本文论证：网络的智能应当放在端点，而非中间节点。这条原则解释了为什么 TCP/IP 赢了 X.25，也解释了今天关于网络中立性的所有争论。
@@ -58,7 +60,7 @@ Parnas 是软件工程"信息隐藏"原则的奠基者。值得记住的一件�
 Wirth 是 Pascal、Modula-2、Oberon 的设计者，1984 图灵奖。他在 ETH Zürich 一生只做一件事：让语言与系统再简单一点。本文给出"Wirth 定律"——软件变慢的速度比硬件变快的速度更快——并讨论为什么。短，恼火，对今天仍然适用。
 
 ### [Notes on Programming in C](languages/pike_notes_on_c.md) — Rob Pike, 1989
-Pike 在 Bell Labs（C 与 Unix 的诞生地）与 K&R 同处一屋檐下做 Unix。后来共同发明 UTF-8、设计 Plan 9，再后来在 Google 主导 Go。本文是他在贝尔实验室时期写的非正式 notes，讲 C 的命名、分支、数据结构选择——短，密度高，每一条都从一个真做过 Unix 内核的人手里出来。
+Pike 在 Bell Labs（C 与 Unix 的诞生地）与 K&R 同处一屋檐下做 Unix。后来共同发明 UTF-8、设计 Plan 9，再后来在 Google 主导 Go。本文是他在贝尔实验室时期写的非正式 notes，讲 C 的命名、分支、数据结构选择——短，密度高，每一条都出自一个真正做过 Unix 内核的人。
 
 ---
 
@@ -71,6 +73,9 @@ Hickey 是 Clojure 与 Datomic 的设计者，一个人（后来加入少数几�
 
 ### [Hammock Driven Development](languages/hickey_hammock_driven_development.md) — Rich Hickey, 2010
 同上。讲的是真正的工作发生在你不打字的时间里——躺在吊床上，让问题在背景中转。讲深度思考为什么不能被冲刺替代。
+
+### [Programming as Theory Building](languages/naur_programming_as_theory_building.md) — Peter Naur, 1985
+Naur 是 ALGOL 60 的设计者之一，BNF 范式（Backus-Naur Form）的共同命名者，2005 年图灵奖。本文的核心命题是：程序不是源码。程序是程序员脑子里共同持有的一种理解——借用哲学家 Ryle 的概念，Naur 称之为 theory。代码只是这个 theory 的有损书面投影。团队解散，程序就死了；文档留下来，但 theory 带不走。这解释了为什么接手别人的代码如此之难，为什么修改总是把结构改坏，以及为什么有时候推倒重写比修复更便宜。
 
 ### [The Emperor's Old Clothes](career/hoare_emperors_old_clothes.md) — C.A.R. Hoare, 1980
 Hoare 发明了快速排序、Hoare logic、CSP（Go 的并发模型来源于此）。这是他 1980 年的图灵奖演讲。本文是他对自己职业生涯的反省，包含著名的"十亿美元的错误"——空引用是他在 ALGOL W 中引入的，他公开为此道歉。一位资深从业者用自己的名字承认错误的文章。
@@ -106,10 +111,10 @@ Turing 一个人把"计算"这件事的形式定义做出来。战时破解 Enig
 Sutton 是强化学习两位奠基人之一，与 Barto 合写了那本经典教材。从 1980 年代起在做 RL——四十多年。2024 年与 Barto 共同获图灵奖。本文极短（不到两千字），但争议巨大。论点：AI 七十年的经验表明，依赖通用方法+算力的路径，长期总赢过依赖人类领域知识的路径。直接预言了今天大模型范式的胜利。
 
 ### [Software 2.0](ai/karpathy_software_2_0.md) — Andrej Karpathy, 2017
-Karpathy 是 Fei-Fei Li 的博士、OpenAI 创始成员、特斯拉 AI 总监；他的 CS231n 和后来的 nanoGPT 教程影响了一整代人。本文是篇短博客，但提出了一个被广泛采用的框架：神经网络是一种新的写软件的方式——你定义目标行为，让搜索（梯度下降）替你写程序。2017 年提出时并不显然，今天回头看几乎是事实陈述。
+Karpathy 是 Fei-Fei Li 的博士、OpenAI 创始成员、特斯拉 AI 总监；他的 CS231n 和后来的 nanoGPT 教程影响了一整代人。本文是一篇短博客，但提出了一个被广泛采用的框架：神经网络是一种新的写软件的方式——你定义目标行为，让搜索（梯度下降）替你写程序。2017 年提出时并不显然，今天回头看几乎是事实陈述。
 
 ### [Computer Science as Empirical Inquiry](ai/newell_simon_empirical_inquiry.md) — Newell & Simon, 1976
-两位都在 CMU，1975 图灵奖。Simon 同时是 1978 经济学诺奖得主——很少有人同时在 AI、决策科学、组织行为、心理学留下基础工作。两人合作四十多年。本文是他们联合图灵奖演讲，提出"物理符号系统假说"：智能的充分必要条件是符号操作。这是经典符号 AI 的奠基命题，也是后来联结主义与深度学习要回应的命题。
+两位都在 CMU，1975 图灵奖。Simon 同时是 1978 年经济学诺奖得主——很少有人同时在 AI、决策科学、组织行为、心理学留下基础工作。两人合作四十多年。本文是他们联合图灵奖演讲，提出"物理符号系统假说"：智能的充分必要条件是符号操作。这是经典符号 AI 的奠基命题，也是后来联结主义与深度学习要回应的命题。
 
 ---
 
