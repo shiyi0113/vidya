@@ -1,6 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url'; 
 import { dirname, resolve } from 'node:path';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -11,7 +11,7 @@ const canonDir = resolve(repoRoot, 'canon');
 const canon = defineCollection({
   loader: glob({
     pattern: ['**/*.md', '!README.md'],
-    base: canonDir,
+    base: pathToFileURL(canonDir), 
   }),
   schema: z.object({
     title: z.string().optional(),
@@ -24,7 +24,7 @@ const canon = defineCollection({
 const pages = defineCollection({
   loader: glob({
     pattern: ['*.md', 'canon/*.md'],
-    base: repoRoot,
+    base: pathToFileURL(repoRoot), 
   }),
 });
 
