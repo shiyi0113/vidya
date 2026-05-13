@@ -12,14 +12,17 @@
 
 ## 推荐起点
 
-最先读这四篇。每篇打开一扇不同的门——读完之后，你看 canon 任何一篇的方式都会变。
+最先读这三篇。每篇打开一扇不同的门——读完之后，你看 canon 任何一篇的方式都会变。
 
 1. **[You and Your Research](career/hamming_you_and_your_research.md)** — Hamming
-2. **[A Mathematician's Apology](career/hardy_mathematicians_apology.md)** — Hardy
-3. **[The Tacit Dimension](inquiry/polanyi_tacit_dimension.md)** — Polanyi
-4. **[Simple Made Easy](languages/hickey_simple_made_easy.md)** — Hickey
+2. **[The Tacit Dimension](inquiry/polanyi_tacit_dimension.md)** — Polanyi
+3. **[Simple Made Easy](languages/hickey_simple_made_easy.md)** — Hickey
 
-Hamming 与 Hardy 直接对立——"在重要的问题上工作"对"美才是唯一的标准"——这条张力贯穿 canon。Polanyi 解释了为什么 canon 是这种形态；Hickey 给你一把可以一辈子带在身上的尺。
+Hamming 给你 canon 的第一条定向——"在重要的问题上工作"。Polanyi 解释了为什么 canon 是这种形态。Hickey 给你一把可以一辈子带在身上的尺。
+
+> Hardy 的《一位数学家的辩护》原在第二位，与 Hamming 互为对立。当前 canon 内的版本被发现是压缩摘要，违反项目原则，已撤下。详见 `trace/_deleted.md`。合格中译出现前，这条张力暂不在 canon 内。
+>
+> **Polanyi 当前文件疑似压缩**（24k 字 vs 完整中译预期 50–60k 字），尚未与原文逐段核对。这条推荐成立的前提是文件忠实——目前这个前提未被验证。详见该文件顶部状态块。
 
 ---
 
@@ -29,12 +32,14 @@ Hamming 与 Hardy 直接对立——"在重要的问题上工作"对"美才是�
 
 ### [The Tacit Dimension](inquiry/polanyi_tacit_dimension.md) — Michael Polanyi, 1966
 三篇讲座，核心命题是开篇一句话："我们知道的，比我们能说出的多。"默会知识有从-至结构：我们从线索出发，抵达我们正在关注的对象；线索本身退入背景，成为身体的延伸。Naur 的《作为理论建构的编程》直接引用了这个框架——程序员头脑中的"理论"，就是波兰尼意义上的默会知识。这解释了为什么接手别人代码如此之难：那些知识从未被写下来过。
+> **当前文件状态**：疑似压缩，待与原文核对。详见文件顶部状态块。
 
 ### [Programming as Theory Building](languages/naur_programming_as_theory_building.md) — Peter Naur, 1985
 Naur 是 ALGOL 60 的设计者之一，BNF 范式（Backus-Naur Form）的共同命名者，2005 年图灵奖。本文的核心命题是：程序不是源码。程序是程序员脑子里共同持有的一种理解——借用哲学家 Ryle 的概念，Naur 称之为 theory。代码只是这个 theory 的有损书面投影。团队解散，程序就死了；文档留下来，但 theory 带不走。这解释了为什么接手别人的代码如此之难，为什么修改总是把结构改坏，以及为什么有时候推倒重写比修复更便宜。
 
 ### [Augmenting Human Intellect: A Conceptual Framework](vision/engelbart_augmenting_human_intellect.md) — Douglas Engelbart, 1962
 Engelbart 是鼠标、超文本、协同编辑的发明者；1968 年他主持的演示后来被称为 "the Mother of All Demos"，一次性预演了之后五十年的个人计算图景。他一生在做同一件事：让人类的集体智识被工具放大。本文是他这件事的纲领——提出 H-LAM/T 框架：人与他的语言、人工物、方法论、训练共同构成一个增智系统。我们今天习以为常的工作方式，几乎都可以追溯到这份纲领。
+> **当前文件状态**：占位，仅含元数据与译者按，正文待翻译。原文为 SRI 完整技术报告，篇幅相当于一本小册子。
 
 ### [Man-Computer Symbiosis](vision/licklider_symbiosis.md) — J.C.R. Licklider, 1960
 Licklider 是 ARPA IPTO 的第一任主任。后来的互联网、个人计算的研究网络，是他用国防经费铺出来的。他自己是心理学出身——所以他从一开始就不把计算机看成"工具"，看成"伙伴"。本文比 Engelbart 的文章早两年，提出"人机共生"：人定义问题、做判断，机器处理可形式化的部分。HCI 与交互式计算的源头。
@@ -59,9 +64,11 @@ Lamport 2013 图灵奖。LaTeX 是他写的。Paxos、TLA+ 也是。分布式系
 
 ### [Computing Machinery and Intelligence](ai/turing_computing_machinery_intelligence.md) — Alan Turing, 1950
 Turing 一个人把"计算"这件事的形式定义做出来。战时破解 Enigma。1952 年因同性恋被英国法庭定罪并强制荷尔蒙治疗，两年后死，41 岁。本文提出图灵测试。但更值得读的部分在后半：他对"机器不能思考"的九种典型反驳逐一回应。这九种反驳今天仍在被反复重提——他七十多年前就已经答完。
+> **当前文件状态**：占位，仅含元数据与译者按，正文待翻译。
 
 ### [Computer Science as Empirical Inquiry](ai/newell_simon_empirical_inquiry.md) — Newell & Simon, 1976
 两位都在 CMU，1975 图灵奖。Simon 同时是 1978 年经济学诺奖得主——很少有人同时在 AI、决策科学、组织行为、心理学留下基础工作。两人合作四十多年。本文是他们联合图灵奖演讲，提出"物理符号系统假说"：智能的充分必要条件是符号操作。这是经典符号 AI 的奠基命题，也是后来联结主义与深度学习要回应的命题。
+> **当前文件状态**：占位，仅含元数据与译者按，正文待翻译。
 
 ### [The Bitter Lesson](ai/sutton_bitter_lesson.md) — Richard Sutton, 2019
 Sutton 是强化学习两位奠基人之一，与 Barto 合写了那本经典教材。从 1980 年代起在做 RL——四十多年。2024 年与 Barto 共同获图灵奖。本文极短（不到两千字），但争议巨大。论点：AI 七十年的经验表明，依赖通用方法+算力的路径，长期总赢过依赖人类领域知识的路径。直接预言了今天大模型范式的胜利。
@@ -122,6 +129,7 @@ Dijkstra 1972 图灵奖。算法、结构化编程、形式方法。脾气大，
 
 ### [Proofs and Refutations](inquiry/lakatos_proofs_and_refutations.md) — Imre Lakatos, 1976
 以苏格拉底式对话的形式，展示数学知识如何在"证明-反例-修正"的循环中生长。以欧拉多面体公式（V−E+F=2）为主线，学生们不断提出反例，老师展示数学家面对反例的三种策略：怪物屏蔽（这不算真正的多面体）、例外屏蔽（修改命题）、引理并入（加固证明使反例不可能）。教给读者的不是数学，是一种姿势：你的工作不是确立真理，是面对下一个反例。
+> **当前文件状态**：压缩件，违反项目原则。19k 字对应原书几百页；包含改写者加的"方法论总结"附录与第三人称口吻泄漏。详见文件顶部状态块。
 
 ### [A Plea for Lean Software](systems/wirth_lean_software.md) — Niklaus Wirth, 1995
 Wirth 是 Pascal、Modula-2、Oberon 的设计者，1984 图灵奖。他在 ETH Zürich 一生只做一件事：让语言与系统再简单一点。本文给出"Wirth 定律"——软件变慢的速度比硬件变快的速度更快——并讨论为什么。短，恼火，对今天仍然适用。一个在自己耕耘了一辈子的领域里见证它衰朽的人的笔记。
@@ -130,13 +138,10 @@ Wirth 是 Pascal、Modula-2、Oberon 的设计者，1984 图灵奖。他在 ETH 
 
 ## 四、立命
 
-这一类问的是同一件事：用一生（或一辈子的话）对准什么？Hamming 选问题、Hardy 选美、Victor 选原则、Orwell 选话语、Calvino 选要带走的文学价值——每一篇都是一种定向。
+这一类问的是同一件事：用一生（或一辈子的话）对准什么？Hamming 选问题、Victor 选原则、Orwell 选话语、Calvino 选要带走的文学价值——每一篇都是一种定向。
 
 ### [You and Your Research](career/hamming_you_and_your_research.md) — Richard Hamming, 1986
 Hamming 是 Bell Labs 的人——和 Shannon、Tukey 在同一栋楼的同一代人。误差校正码是他做的。Manhattan 项目早期他在场。他用职业生涯的后半段反复琢磨同一个问题：为什么有些人做出的工作能留下来，绝大多数人不能？本文是他在 Bell Labs 的一场演讲。直白，不留情面：如果你不在重要的问题上工作，你不会做出重要的工作。其它一切优先级判断都从这一句出发。
-
-### [A Mathematician's Apology](career/hardy_mathematicians_apology.md) — G.H. Hardy, 1940
-Hardy 是二十世纪最重要的英国数学家之一，发现并培养了 Ramanujan。这本书写于他中风、无法再做数学之后，带着无可掩盖的暮年悲怆。他为"无用的数学"辩护——真正的数学，就像绘画与诗歌，是图案的制作；美是唯一的标准。放在 Hamming 旁边读：两人对"值得做的工作"给出了对立的两种答案，读者必须自己裁决。
 
 ### [Inventing on Principle](vision/victor_inventing_on_principle.md) — Bret Victor, 2012
 Victor 早年在 Apple 做交互设计，离开后用十多年时间打磨少数几篇极有重量的文章和演示，现在做 Dynamicland。他的产出节奏本身就在说明什么叫"在一件事上待够久"。本文是一场演讲。表面上讲"创造者需要与所创之物即时连接"，底下问的是：你愿意为某一条原则，组织你的一生吗？
@@ -146,3 +151,4 @@ Orwell 论证语言的腐化与政治的腐化互为因果：模糊的语言让�
 
 ### [Six Memos for the Next Millennium](expression/calvino_six_memos.md) — Italo Calvino, 1985
 卡尔维诺在生命最后一年为哈佛诺顿讲座写下的六封信，只完成五封便去世。每封信凝炼他对文学一种核心价值的理解：轻盈、迅捷、确切、可见性、繁复，以及未写完的第六封。他用珀尔修斯斩美杜莎的神话讲轻盈，用水晶与火焰的对立讲确切。临终前的总结，每个字都有分量。接 README 内核"死亡与有限性"——正因为第六讲没有写完，这五讲才更像遗嘱。
+> **当前文件状态**：压缩件，违反项目原则。23k 字对应 5 篇讲座（完整译本应 60–90k 字）；含改写者加的"卡尔维诺谈 X"型小标题与死后传记叙述式后记。详见文件顶部状态块。
