@@ -21,6 +21,8 @@
 Hamming 给你 canon 的第一条定向——"在重要的问题上工作"。Polanyi 解释了为什么 canon 是这种形态。Hickey 给你一把可以一辈子带在身上的尺。
 
 > Hardy 的《一位数学家的辩护》原在第二位，与 Hamming 互为对立。当前 canon 内的版本被发现是压缩摘要，违反项目原则，已撤下。详见 `trace/_deleted.md`。合格中译出现前，这条张力暂不在 canon 内。
+>
+> **Polanyi 当前文件疑似压缩**（24k 字 vs 完整中译预期 50–60k 字），尚未与原文逐段核对。这条推荐成立的前提是文件忠实——目前这个前提未被验证。详见该文件顶部状态块。
 
 ---
 
@@ -30,12 +32,14 @@ Hamming 给你 canon 的第一条定向——"在重要的问题上工作"。Pol
 
 ### [The Tacit Dimension](inquiry/polanyi_tacit_dimension.md) — Michael Polanyi, 1966
 三篇讲座，核心命题是开篇一句话："我们知道的，比我们能说出的多。"默会知识有从-至结构：我们从线索出发，抵达我们正在关注的对象；线索本身退入背景，成为身体的延伸。Naur 的《作为理论建构的编程》直接引用了这个框架——程序员头脑中的"理论"，就是波兰尼意义上的默会知识。这解释了为什么接手别人代码如此之难：那些知识从未被写下来过。
+> **当前文件状态**：疑似压缩，待与原文核对。详见文件顶部状态块。
 
 ### [Programming as Theory Building](languages/naur_programming_as_theory_building.md) — Peter Naur, 1985
 Naur 是 ALGOL 60 的设计者之一，BNF 范式（Backus-Naur Form）的共同命名者，2005 年图灵奖。本文的核心命题是：程序不是源码。程序是程序员脑子里共同持有的一种理解——借用哲学家 Ryle 的概念，Naur 称之为 theory。代码只是这个 theory 的有损书面投影。团队解散，程序就死了；文档留下来，但 theory 带不走。这解释了为什么接手别人的代码如此之难，为什么修改总是把结构改坏，以及为什么有时候推倒重写比修复更便宜。
 
 ### [Augmenting Human Intellect: A Conceptual Framework](vision/engelbart_augmenting_human_intellect.md) — Douglas Engelbart, 1962
 Engelbart 是鼠标、超文本、协同编辑的发明者；1968 年他主持的演示后来被称为 "the Mother of All Demos"，一次性预演了之后五十年的个人计算图景。他一生在做同一件事：让人类的集体智识被工具放大。本文是他这件事的纲领——提出 H-LAM/T 框架：人与他的语言、人工物、方法论、训练共同构成一个增智系统。我们今天习以为常的工作方式，几乎都可以追溯到这份纲领。
+> **当前文件状态**：占位，仅含元数据与译者按，正文待翻译。原文为 SRI 完整技术报告，篇幅相当于一本小册子。
 
 ### [Man-Computer Symbiosis](vision/licklider_symbiosis.md) — J.C.R. Licklider, 1960
 Licklider 是 ARPA IPTO 的第一任主任。后来的互联网、个人计算的研究网络，是他用国防经费铺出来的。他自己是心理学出身——所以他从一开始就不把计算机看成"工具"，看成"伙伴"。本文比 Engelbart 的文章早两年，提出"人机共生"：人定义问题、做判断，机器处理可形式化的部分。HCI 与交互式计算的源头。
@@ -60,9 +64,11 @@ Lamport 2013 图灵奖。LaTeX 是他写的。Paxos、TLA+ 也是。分布式系
 
 ### [Computing Machinery and Intelligence](ai/turing_computing_machinery_intelligence.md) — Alan Turing, 1950
 Turing 一个人把"计算"这件事的形式定义做出来。战时破解 Enigma。1952 年因同性恋被英国法庭定罪并强制荷尔蒙治疗，两年后死，41 岁。本文提出图灵测试。但更值得读的部分在后半：他对"机器不能思考"的九种典型反驳逐一回应。这九种反驳今天仍在被反复重提——他七十多年前就已经答完。
+> **当前文件状态**：占位，仅含元数据与译者按，正文待翻译。
 
 ### [Computer Science as Empirical Inquiry](ai/newell_simon_empirical_inquiry.md) — Newell & Simon, 1976
 两位都在 CMU，1975 图灵奖。Simon 同时是 1978 年经济学诺奖得主——很少有人同时在 AI、决策科学、组织行为、心理学留下基础工作。两人合作四十多年。本文是他们联合图灵奖演讲，提出"物理符号系统假说"：智能的充分必要条件是符号操作。这是经典符号 AI 的奠基命题，也是后来联结主义与深度学习要回应的命题。
+> **当前文件状态**：占位，仅含元数据与译者按，正文待翻译。
 
 ### [The Bitter Lesson](ai/sutton_bitter_lesson.md) — Richard Sutton, 2019
 Sutton 是强化学习两位奠基人之一，与 Barto 合写了那本经典教材。从 1980 年代起在做 RL——四十多年。2024 年与 Barto 共同获图灵奖。本文极短（不到两千字），但争议巨大。论点：AI 七十年的经验表明，依赖通用方法+算力的路径，长期总赢过依赖人类领域知识的路径。直接预言了今天大模型范式的胜利。
@@ -123,6 +129,7 @@ Dijkstra 1972 图灵奖。算法、结构化编程、形式方法。脾气大，
 
 ### [Proofs and Refutations](inquiry/lakatos_proofs_and_refutations.md) — Imre Lakatos, 1976
 以苏格拉底式对话的形式，展示数学知识如何在"证明-反例-修正"的循环中生长。以欧拉多面体公式（V−E+F=2）为主线，学生们不断提出反例，老师展示数学家面对反例的三种策略：怪物屏蔽（这不算真正的多面体）、例外屏蔽（修改命题）、引理并入（加固证明使反例不可能）。教给读者的不是数学，是一种姿势：你的工作不是确立真理，是面对下一个反例。
+> **当前文件状态**：压缩件，违反项目原则。19k 字对应原书几百页；包含改写者加的"方法论总结"附录与第三人称口吻泄漏。详见文件顶部状态块。
 
 ### [A Plea for Lean Software](systems/wirth_lean_software.md) — Niklaus Wirth, 1995
 Wirth 是 Pascal、Modula-2、Oberon 的设计者，1984 图灵奖。他在 ETH Zürich 一生只做一件事：让语言与系统再简单一点。本文给出"Wirth 定律"——软件变慢的速度比硬件变快的速度更快——并讨论为什么。短，恼火，对今天仍然适用。一个在自己耕耘了一辈子的领域里见证它衰朽的人的笔记。
@@ -144,3 +151,4 @@ Orwell 论证语言的腐化与政治的腐化互为因果：模糊的语言让�
 
 ### [Six Memos for the Next Millennium](expression/calvino_six_memos.md) — Italo Calvino, 1985
 卡尔维诺在生命最后一年为哈佛诺顿讲座写下的六封信，只完成五封便去世。每封信凝炼他对文学一种核心价值的理解：轻盈、迅捷、确切、可见性、繁复，以及未写完的第六封。他用珀尔修斯斩美杜莎的神话讲轻盈，用水晶与火焰的对立讲确切。临终前的总结，每个字都有分量。接 README 内核"死亡与有限性"——正因为第六讲没有写完，这五讲才更像遗嘱。
+> **当前文件状态**：压缩件，违反项目原则。23k 字对应 5 篇讲座（完整译本应 60–90k 字）；含改写者加的"卡尔维诺谈 X"型小标题与死后传记叙述式后记。详见文件顶部状态块。
