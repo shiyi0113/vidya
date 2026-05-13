@@ -12,14 +12,15 @@
 
 ## 推荐起点
 
-最先读这四篇。每篇打开一扇不同的门——读完之后，你看 canon 任何一篇的方式都会变。
+最先读这三篇。每篇打开一扇不同的门——读完之后，你看 canon 任何一篇的方式都会变。
 
 1. **[You and Your Research](career/hamming_you_and_your_research.md)** — Hamming
-2. **[A Mathematician's Apology](career/hardy_mathematicians_apology.md)** — Hardy
-3. **[The Tacit Dimension](inquiry/polanyi_tacit_dimension.md)** — Polanyi
-4. **[Simple Made Easy](languages/hickey_simple_made_easy.md)** — Hickey
+2. **[The Tacit Dimension](inquiry/polanyi_tacit_dimension.md)** — Polanyi
+3. **[Simple Made Easy](languages/hickey_simple_made_easy.md)** — Hickey
 
-Hamming 与 Hardy 直接对立——"在重要的问题上工作"对"美才是唯一的标准"——这条张力贯穿 canon。Polanyi 解释了为什么 canon 是这种形态；Hickey 给你一把可以一辈子带在身上的尺。
+Hamming 给你 canon 的第一条定向——"在重要的问题上工作"。Polanyi 解释了为什么 canon 是这种形态。Hickey 给你一把可以一辈子带在身上的尺。
+
+> Hardy 的《一位数学家的辩护》原在第二位，与 Hamming 互为对立。当前 canon 内的版本被发现是压缩摘要，违反项目原则，已撤下。详见 `trace/_deleted.md`。合格中译出现前，这条张力暂不在 canon 内。
 
 ---
 
@@ -130,13 +131,10 @@ Wirth 是 Pascal、Modula-2、Oberon 的设计者，1984 图灵奖。他在 ETH 
 
 ## 四、立命
 
-这一类问的是同一件事：用一生（或一辈子的话）对准什么？Hamming 选问题、Hardy 选美、Victor 选原则、Orwell 选话语、Calvino 选要带走的文学价值——每一篇都是一种定向。
+这一类问的是同一件事：用一生（或一辈子的话）对准什么？Hamming 选问题、Victor 选原则、Orwell 选话语、Calvino 选要带走的文学价值——每一篇都是一种定向。
 
 ### [You and Your Research](career/hamming_you_and_your_research.md) — Richard Hamming, 1986
 Hamming 是 Bell Labs 的人——和 Shannon、Tukey 在同一栋楼的同一代人。误差校正码是他做的。Manhattan 项目早期他在场。他用职业生涯的后半段反复琢磨同一个问题：为什么有些人做出的工作能留下来，绝大多数人不能？本文是他在 Bell Labs 的一场演讲。直白，不留情面：如果你不在重要的问题上工作，你不会做出重要的工作。其它一切优先级判断都从这一句出发。
-
-### [A Mathematician's Apology](career/hardy_mathematicians_apology.md) — G.H. Hardy, 1940
-Hardy 是二十世纪最重要的英国数学家之一，发现并培养了 Ramanujan。这本书写于他中风、无法再做数学之后，带着无可掩盖的暮年悲怆。他为"无用的数学"辩护——真正的数学，就像绘画与诗歌，是图案的制作；美是唯一的标准。放在 Hamming 旁边读：两人对"值得做的工作"给出了对立的两种答案，读者必须自己裁决。
 
 ### [Inventing on Principle](vision/victor_inventing_on_principle.md) — Bret Victor, 2012
 Victor 早年在 Apple 做交互设计，离开后用十多年时间打磨少数几篇极有重量的文章和演示，现在做 Dynamicland。他的产出节奏本身就在说明什么叫"在一件事上待够久"。本文是一场演讲。表面上讲"创造者需要与所创之物即时连接"，底下问的是：你愿意为某一条原则，组织你的一生吗？
